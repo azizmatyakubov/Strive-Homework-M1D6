@@ -125,6 +125,24 @@ const isThisAnEmail = (str) => {
    Write a function called whatDayIsIt that should return the current day of the week.
 */
 
+const whatDayIsIt = () => {
+    let today = new Date().getDay().toString()
+    result = ''
+    switch (today) {
+        case '1': result = 'Monday'; break;
+        case '2': result = 'Tuesday'; break;
+        case '3': result = 'Wednesday'; break;
+        case '4': result = 'Thursday'; break;
+        case '5': result = 'Friday'; break;
+        case '6': result = 'Saturday'; break;
+        case '7': result = 'Sunday'; break;
+        default: "Sorry, we couldn't find it"
+    }
+
+    return `Today is ${result}`
+}
+
+
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
