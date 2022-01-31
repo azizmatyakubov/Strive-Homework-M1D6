@@ -176,6 +176,19 @@ const rollTheDices = (num) => {
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
 
+const howManyDays = (date) => {
+
+    // let day = new Date().getDay();
+    // let month = new Date().getMonth();
+    // let year = new Date().getFullYear();
+    // let fullYear = `${year}-${month }-${day}`
+
+    let today = '2022-01-31'
+    return result = (new Date(today) - new Date(date)) / (1000 * 60 * 60 * 24)
+}
+
+
+
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
