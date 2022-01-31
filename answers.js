@@ -420,6 +420,16 @@ const sumAllTheYears = () => {
     Write a function called searchByTitle which receives a string as a parameter and returns all the movies in the provided movies array which contain that string in the title.
 */
 
+const searchByTitle = (str) => {
+    let moviesArr = []
+    for(let n in movies) {
+        if(movies[n].Title.includes(str)) {
+            moviesArr.push(movies[n])
+        }
+    }
+    return moviesArr
+}
+
 /* EXERCISE 19
     Write a function called searchAndDivide which receives a string as a parameter and returns an object;
     this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
