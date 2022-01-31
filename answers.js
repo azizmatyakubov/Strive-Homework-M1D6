@@ -408,6 +408,14 @@ const getMovieById = (id) => {
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
 */
 
+const sumAllTheYears = () => {
+    let sumYears = 0
+    for(let n in movies) {
+        sumYears += parseInt(movies[n].Year)
+    }
+    return sumYears
+}
+
 /* EXERCISE 18
     Write a function called searchByTitle which receives a string as a parameter and returns all the movies in the provided movies array which contain that string in the title.
 */
