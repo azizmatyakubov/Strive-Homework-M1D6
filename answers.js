@@ -138,7 +138,6 @@ const whatDayIsIt = () => {
         case '7': result = 'Sunday'; break;
         default: "Sorry, we couldn't find it"
     }
-
     return `Today is ${result}`
 }
 
@@ -192,6 +191,23 @@ const howManyDays = (date) => {
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
+
+const isTodayMyBirthday = () => {
+
+    let today = new Date();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+  
+    let birthMonth = 12
+    let birthDay = 7
+
+    if(birthDay == day && birthMonth == month) {
+        return true
+    } else {
+        return false
+    }
+}
+
 
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
