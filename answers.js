@@ -382,6 +382,16 @@ const onlyTheTitles = () => {
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
 
+const onlyInThisMillennium = () => {
+    let moviesArr = []
+    for(let n in movies) {
+        if(movies[n].Year > 2000) {
+            moviesArr.push(movies[n])
+        }
+    }
+    return moviesArr
+}
+
 /* EXERCISE 16 
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
