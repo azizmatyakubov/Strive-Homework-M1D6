@@ -113,6 +113,14 @@ const onlyLetters = (str) => {
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+const isThisAnEmail = (str) => {
+    if(str.includes('@')) {
+        return 'Valid email'
+    } else {
+        return 'Invalid email'
+    }
+ }
+ 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
