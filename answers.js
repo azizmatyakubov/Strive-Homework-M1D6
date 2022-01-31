@@ -154,6 +154,24 @@ const whatDayIsIt = () => {
     }
 */
 
+const rollTheDices = (num) => {
+
+    let rollTimes = 0
+    let sum = 0
+    let values = []
+     
+    while(rollTimes <= num) {
+        let randomNum = dice()
+        sum += randomNum
+        values.push(randomNum)
+        rollTimes++
+    }
+
+    let result = `sum: ${sum} \nvalues: [${values}] `
+    return result 
+}
+
+
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
