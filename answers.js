@@ -476,6 +476,12 @@ const removeIndex = (num) => {
   ***
 */
 
+const halfTree = (num) => {
+    let star = ''
+    for(let i=0; i<num; i++) {
+        console.log(star += '*')
+    }
+}
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
   Example: 
