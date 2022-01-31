@@ -360,6 +360,11 @@ const oldestMovie = () => {
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
 
+const countMovies = () => {
+    return `There are ${movies.length} movies`  
+}
+
+
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
 */
