@@ -436,9 +436,34 @@ const searchByTitle = (str) => {
     and another array unmatch with all the remaining ones.
 */
 
+const searchAndDivide = (str) => {
+    let match = []
+    let unmatch = []
+
+    for(let n in movies) {
+        if(movies[n].Title.includes(str)) {
+            match.push(movies[n])
+        } else {
+            unmatch.push(movies[n])
+        }
+    }
+
+    return `Matched movies: ${match} \nunmatched movies: ${unmatch}`
+}
+
+
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
+
+const removeIndex = (num) => {
+    if(num > movies.length) {
+        return 'you are out of range'
+    } else {
+        movies.splice(num, 1)
+    }
+    return movies
+}
 
 // [EXTRAS] JS Advanced
 
