@@ -99,6 +99,16 @@ const deleteOne = (str, boolean) => {
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
 
+const onlyLetters = (str) => {
+    let arr = str.split('')
+    for(let i=0; i<arr.length; i++) {
+        if(!isNaN(arr[i])) {
+           arr[i] = ' '
+        }
+    }
+    return arr.join('')
+}
+
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
