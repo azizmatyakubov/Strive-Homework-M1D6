@@ -217,6 +217,10 @@ const isTodayMyBirthday = () => {
    and returns the given object after deleting its property named as the given string.
 */
 
+const deleteProp = (obj, str) => {
+    return delete obj[str]
+}
+
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
@@ -398,3 +402,6 @@ const movies = [
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
+
+
+
